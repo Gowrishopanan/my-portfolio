@@ -1,0 +1,221 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+/* Premium Designer Outline Fonts */
+.font-outline {
+  -webkit-text-stroke: 1.5px rgba(18, 18, 20, 0.45);
+  color: transparent;
+}
+
+.font-outline-light {
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+  color: transparent;
+}
+
+/* Elegant Grid Line System */
+.bg-grid-lines {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4%;
+  z-index: 0;
+}
+
+.grid-vertical-line {
+  width: 1px;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.06) 50%, rgba(0,0,0,0.03) 100%);
+}
+
+/* Glassmorphism containers */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.glass-panel-dark {
+  background: rgba(20, 20, 22, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Signature Apple.com Scroll Reveal Easing */
+.apple-reveal {
+  opacity: 0;
+  transform: translateY(35px) scale(0.99);
+  transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+
+.apple-reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Cascaded Reveal Delays for dynamic grid waves! */
+.delay-100 { transition-delay: 100ms; }
+.delay-200 { transition-delay: 200ms; }
+.delay-300 { transition-delay: 300ms; }
+.delay-400 { transition-delay: 400ms; }
+.delay-500 { transition-delay: 500ms; }
+
+/* Spring-Loaded Skill bar growth animation */
+@keyframes spring-fill {
+  0% { transform: scaleX(0); }
+  60% { transform: scaleX(1.06); }
+  85% { transform: scaleX(0.98); }
+  100% { transform: scaleX(1); }
+}
+
+.spring-fill {
+  transform-origin: left;
+  animation: spring-fill 1.3s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+/* Liquid magnetic-style hover spring for premium button feedback */
+.btn-magnetic {
+  transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s cubic-bezier(0.16, 1, 0.3, 1), background-color 0.4s ease;
+}
+
+.btn-magnetic:hover {
+  transform: scale(1.03) translateY(-1px);
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 128, 0.15);
+}
+
+.btn-magnetic:active {
+  transform: scale(0.98) translateY(0);
+}
+
+/* Scrollbar customizations */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000080;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6D8196;
+}
+
+/* Perspective space for 3D elements */
+.perspective-container {
+  perspective: 1200px;
+}
+
+/* Cinematic Staggered Entrance Reveal for Home Page */
+.cinematic-grid-line {
+  opacity: 0;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 1.8s cubic-bezier(0.16, 1, 0.3, 1), opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity;
+}
+.cinematic-grid-line.active {
+  opacity: 1;
+  transform: scaleY(1);
+}
+.cinematic-grid-line:nth-child(1) { transition-delay: 100ms; }
+.cinematic-grid-line:nth-child(2) { transition-delay: 250ms; }
+.cinematic-grid-line:nth-child(3) { transition-delay: 400ms; }
+.cinematic-grid-line:nth-child(4) { transition-delay: 550ms; }
+
+.cinematic-title {
+  opacity: 0;
+  letter-spacing: 1.2em;
+  filter: blur(25px);
+  transform: scale(1.08);
+  transition: 
+    letter-spacing 2.4s cubic-bezier(0.16, 1, 0.3, 1), 
+    filter 2.0s cubic-bezier(0.16, 1, 0.3, 1), 
+    opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1), 
+    transform 2.4s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: letter-spacing, filter, opacity, transform;
+}
+.cinematic-title.active {
+  opacity: 1;
+  letter-spacing: -0.05em;
+  filter: blur(0);
+  transform: scale(1);
+  transition-delay: 250ms;
+}
+
+.cinematic-portrait {
+  opacity: 0;
+  transform: translateY(140px) scale(0.88) rotateX(12deg);
+  filter: blur(15px) brightness(1.6);
+  transform-origin: bottom center;
+  transition: 
+    transform 2.2s cubic-bezier(0.16, 1, 0.3, 1), 
+    filter 2.0s cubic-bezier(0.16, 1, 0.3, 1), 
+    opacity 2.0s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, filter, opacity;
+}
+.cinematic-portrait.active {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotateX(0deg);
+  filter: blur(0) brightness(1);
+  transition-delay: 150ms;
+}
+
+.cinematic-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  clip-path: inset(0 100% 0 0);
+  transition: 
+    transform 1.8s cubic-bezier(0.16, 1, 0.3, 1), 
+    opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1), 
+    clip-path 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity, clip-path;
+}
+.cinematic-left.active {
+  opacity: 1;
+  transform: translateX(0);
+  clip-path: inset(0 0 0 0);
+  transition-delay: 450ms;
+}
+
+.cinematic-right {
+  opacity: 0;
+  transform: translateX(50px);
+  clip-path: inset(0 0 0 100%);
+  transition: 
+    transform 1.8s cubic-bezier(0.16, 1, 0.3, 1), 
+    opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1), 
+    clip-path 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform, opacity, clip-path;
+}
+.cinematic-right.active {
+  opacity: 1;
+  transform: translateX(0);
+  clip-path: inset(0 0 0 0);
+  transition-delay: 550ms;
+}
+

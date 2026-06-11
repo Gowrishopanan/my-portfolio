@@ -1,0 +1,252 @@
+{
+  "settings": {
+    "name": "Gowrishopanan Siveswaran",
+    "title": "Software Engineering Student",
+    "subTitle": "SAAS, WEB & DEEP LEARNING DEVELOPER",
+    "bio": "I am an ambitious Software Engineering student with a solid foundation in Java, C++, and JavaScript, complemented by practical experience in web application development. I am seeking an IT Intern position where I can apply my technical knowledge, gain hands-on experience, and contribute to the success of IT projects. With strong problem-solving skills, attention to detail, and a collaborative mindset, I am eager to support IT teams in developing, maintaining, and optimizing software solutions while enhancing my professional expertise.",
+    "email": "siveswaran.shopanan@gmail.com",
+    "phone": "+94 750305074",
+    "location": "Colombo, Sri Lanka",
+    "github": "https://github.com",
+    "linkedin": "https://linkedin.com",
+    "avatar": ""
+  },
+  "projects": [
+    {
+      "id": "proj_1",
+      "title": "LipReadAI",
+      "subtitle": "Real-Time Lip Reading & Speech Recognition (Final Year Research)",
+      "category": "Deep Learning / AI",
+      "description": "A real-time deep learning system that converts silent lip movements into readable text in real time. Designed to help people with hearing or speech impairments by using raw video input, extracting facial/lip landmarks, and predicting sentences using a neural network trained on massive datasets (GRID, LRW, LRS3).",
+      "details": [
+        "Programming Language: Python",
+        "Frameworks: TensorFlow, PyTorch, OpenCV, MediaPipe, ONNX Runtime",
+        "Libraries: NumPy, Pandas, Matplotlib, Dlib, Scikit-learn",
+        "Interface Development: Streamlit, Flask, React",
+        "Hardware: GPU-accelerated environment (Google Colab / NVIDIA CUDA)"
+      ],
+      "tags": ["Python", "TensorFlow", "PyTorch", "OpenCV", "MediaPipe", "React"],
+      "liveUrl": "",
+      "githubUrl": "https://github.com"
+    },
+    {
+      "id": "proj_2",
+      "title": "Online E-commerce Platform",
+      "subtitle": "Full-Stack Web Application (Real Client Work)",
+      "category": "MERN Stack",
+      "description": "Developed a full-stack e-commerce system featuring OTP verification, Cloudinary media storage, custom e-mail alerts for order confirmations, and a highly responsive Tailwind CSS user interface.",
+      "details": [
+        "Developed full-stack e-commerce platform using MongoDB, Express.js, React, and Node.js",
+        "Designed modern, mobile-responsive UI using Tailwind CSS",
+        "Implemented OTP verification for secure user registration",
+        "Integrated Cloudinary for media uploads and asset management",
+        "Integrated email alerts for automated order confirmations"
+      ],
+      "tags": ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS", "Cloudinary"],
+      "liveUrl": "https://adssaya-multi-choice.vercel.app/",
+      "githubUrl": "https://github.com"
+    },
+    {
+      "id": "proj_3",
+      "title": "Hotel Reservation System",
+      "subtitle": "SLIIT 2nd Year 2nd Semester Project",
+      "category": "MERN Stack",
+      "description": "A responsive and robust hotel room booking system with real-time room availability, secure user login, booking confirmation, and email alerts.",
+      "details": [
+        "Developed a full-stack hotel reservation system using MERN stack",
+        "Designed clean and intuitive UI using Tailwind CSS",
+        "Implemented real-time room availability updates and user booking logs",
+        "Integrated secure password hashing and JWT authentication"
+      ],
+      "tags": ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
+      "liveUrl": "",
+      "githubUrl": "https://github.com"
+    },
+    {
+      "id": "proj_4",
+      "title": "Musical Instrument Store",
+      "subtitle": "SLIIT 2nd Year 1st Semester Project",
+      "category": "Java Web App",
+      "description": "A web-based musical instrument shopping application built in Java, featuring shopping cart functionality, user auth, and complete order management workflows.",
+      "details": [
+        "Developed web-based musical instrument store using Java for backend development",
+        "Implemented secure user authentication and session management",
+        "Created dynamic shopping cart and customer order checkout flow",
+        "Utilized Relational Database for product and user data storage"
+      ],
+      "tags": ["Java", "JSP/Servlet", "MySQL", "HTML/CSS", "JavaScript"],
+      "liveUrl": "",
+      "githubUrl": "https://github.com"
+    },
+    {
+      "id": "proj_5",
+      "title": "Online Salon Booking System",
+      "subtitle": "SLIIT 1st Year 2nd Semester Project",
+      "category": "PHP Web App",
+      "description": "A web-based salon appointment scheduling platform featuring service browsing, slot reservation, and an admin dashboard to manage salon schedules.",
+      "details": [
+        "Developed custom PHP-based reservation backend using MySQL database storage",
+        "Implemented scheduling engine preventing duplicate slot booking",
+        "Created administrative dashboard for salon operators to manage appointments"
+      ],
+      "tags": ["PHP", "MySQL", "HTML", "CSS", "JavaScript"],
+      "liveUrl": "",
+      "githubUrl": "https://github.com"
+    }
+  ],
+  "skills": [
+    {
+      "id": "skill_1",
+      "name": "Java",
+      "category": "Programming Languages",
+      "level": "Advanced"
+    },
+    {
+      "id": "skill_2",
+      "name": "JavaScript",
+      "category": "Programming Languages",
+      "level": "Advanced"
+    },
+    {
+      "id": "skill_3",
+      "name": "C++",
+      "category": "Programming Languages",
+      "level": "Intermediate"
+    },
+    {
+      "id": "skill_4",
+      "name": "PHP",
+      "category": "Programming Languages",
+      "level": "Intermediate"
+    },
+    {
+      "id": "skill_5",
+      "name": "SQL",
+      "category": "Programming Languages",
+      "level": "Advanced"
+    },
+    {
+      "id": "skill_6",
+      "name": "React",
+      "category": "Frameworks",
+      "level": "Advanced"
+    },
+    {
+      "id": "skill_7",
+      "name": "Express JS",
+      "category": "Frameworks",
+      "level": "Advanced"
+    },
+    {
+      "id": "skill_8",
+      "name": "Tailwind CSS",
+      "category": "Frameworks",
+      "level": "Advanced"
+    },
+    {
+      "id": "skill_9",
+      "name": "MongoDB",
+      "category": "Database",
+      "level": "Advanced"
+    },
+    {
+      "id": "skill_10",
+      "name": "MySQL",
+      "category": "Database",
+      "level": "Advanced"
+    },
+    {
+      "id": "skill_11",
+      "name": "Git & GitHub",
+      "category": "Tools",
+      "level": "Advanced"
+    },
+    {
+      "id": "skill_12",
+      "name": "Postman",
+      "category": "Tools",
+      "level": "Advanced"
+    },
+    {
+      "id": "skill_13",
+      "name": "Figma",
+      "category": "Editing / Design",
+      "level": "Intermediate"
+    },
+    {
+      "id": "skill_14",
+      "name": "Photoshop & Illustrator",
+      "category": "Editing / Design",
+      "level": "Intermediate"
+    },
+    {
+      "id": "skill_15",
+      "name": "Selenium",
+      "category": "Software Testing",
+      "level": "Intermediate"
+    }
+  ],
+  "education": [
+    {
+      "id": "edu_1",
+      "degree": "BSc (Hons) in Computer and Information Systems",
+      "institution": "University of Greenwich, England",
+      "period": "2025 - 2026",
+      "description": "Focused on advanced systems engineering, full-stack architectures, and AI deep learning research (LipReadAI)."
+    },
+    {
+      "id": "edu_2",
+      "degree": "BSc (Hons) in Information Technology Specialized in Software Engineering",
+      "institution": "Sri Lanka Institute of Information Technology (SLIIT)",
+      "period": "2023 - 2025",
+      "description": "Graduated with Higher Diploma in Information Technology. Excellent grades in OOP, Design Patterns, Java/MERN web development, and software testing."
+    }
+  ],
+  "references": [
+    {
+      "id": "ref_1",
+      "name": "Dr. Nathali Silva",
+      "title": "Senior Professor",
+      "organization": "SLIIT",
+      "email": "j.nathali.s@sliit.lk",
+      "phone": ""
+    },
+    {
+      "id": "ref_2",
+      "name": "Mr. Vithushiyan Pathivarathan",
+      "title": "Senior Software Engineer",
+      "organization": "Flora Group - Qatar",
+      "email": "vithushiy@gmail.com",
+      "phone": "+94 76 386 9788"
+    }
+  ],
+  "experience": [
+    {
+      "id": "exp_1",
+      "role": "AI & ML Engineer Intern",
+      "company": "Sri Lanka Telecom (SLT Digital Lab)",
+      "period": "January 2026 — Present",
+      "location": "Colombo, Sri Lanka",
+      "type": "Internship",
+      "details": [
+        "Working on Artificial Intelligence and Machine Learning projects at SLT Digital Lab.",
+        "Developing and experimenting with ML models to solve real-world telecom problems.",
+        "Collaborating with senior engineers on AI-driven solutions and data pipelines."
+      ]
+    },
+    {
+      "id": "exp_2",
+      "role": "Data Analyst",
+      "company": "Port City BPO",
+      "period": "March 2026 — Present",
+      "location": "Colombo, Sri Lanka",
+      "type": "Associate",
+      "details": [
+        "Analysing business data to generate meaningful insights and reports.",
+        "Working with datasets to identify trends and support data-driven decision making.",
+        "Creating dashboards and visualisations to present findings to stakeholders."
+      ]
+    }
+  ],
+  "messages": []
+}
