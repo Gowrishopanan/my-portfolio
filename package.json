@@ -7,7 +7,7 @@
     "start": "concurrently \"npm run backend\" \"npm run frontend\"",
     "backend": "cd backend && npm run dev",
     "frontend": "cd frontend && npm run dev",
-    "build": "cd frontend && npm install && npm run build"
+    "build": "cd frontend && npm install && npm run build && mv dist ../dist"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
