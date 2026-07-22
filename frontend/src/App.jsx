@@ -22,7 +22,8 @@ function AppContent() {
   // Global portfolio content states with instant mock fallbacks
   const [settings, setSettings] = useState({
     name: 'Gowrishopanan Siveswaran',
-    title: 'SOFTWARE ENGINEERING STUDENT',
+    title: 'IT STUDENT',
+    subTitle: 'QUALITY ASSURANCE ENGINEER',
     location: 'COLOMBO, SRI LANKA',
     bio: 'Pioneering intelligent user interfaces, human-computer speech systems, and full-stack software development.',
     github: 'https://github.com',

@@ -62,11 +62,26 @@ export default function Home({ settings, setCurrentPage }) {
           <div className={`w-full md:w-[35%] lg:w-[38%] flex flex-col gap-6 md:text-left text-center md:pb-28 md:pl-2 select-none z-20 cinematic-left ${isMounted ? 'active' : ''}`}>
             <div className="flex flex-col gap-2.5">
               <span className="font-display text-xs md:text-sm tracking-[0.2em] font-extrabold text-black/50 uppercase">
-                {settings.title || 'SOFTWARE ENGINEERING STUDENT'}
+                {settings.title || 'IT STUDENT'}
               </span>
               <h2 className="font-display text-3xl md:text-[3rem] lg:text-[3.3rem] font-black tracking-tight text-black leading-[1.02] uppercase">
-                UI/UX PRODUCT<br />
-                DEVELOPER
+                {settings.subTitle ? (
+                  settings.subTitle.includes('\n') ? (
+                    settings.subTitle.split('\n').map((line, i) => (
+                      <React.Fragment key={i}>
+                        {line}
+                        {i < settings.subTitle.split('\n').length - 1 && <br />}
+                      </React.Fragment>
+                    ))
+                  ) : (
+                    settings.subTitle
+                  )
+                ) : (
+                  <>
+                    QUALITY ASSURANCE<br />
+                    ENGINEER
+                  </>
+                )}
               </h2>
             </div>
 
